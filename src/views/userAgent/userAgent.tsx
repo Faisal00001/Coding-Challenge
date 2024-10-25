@@ -5,7 +5,7 @@ import { useUserAgentContext } from "@/components/providers/userAgentProvider";
 
 export const UserAgent = () => {
   const { userAgent } = useUserAgentContext();
-  const serverSideUserAgent = typeof window === 'undefined' ? process.env.USER_AGENT : null;
+  const serverSideUserAgent = typeof window === 'undefined' ? "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" : null;
 
   return (
     <div>
